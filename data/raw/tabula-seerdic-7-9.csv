@@ -1,0 +1,125 @@
+Item Name;Positions;Length
+Patient ID number;1-8;8
+Registry ID;9-18;10
+Marital Status at DX;19-19;1
+Race/Ethnicity;20-21;2
+Spanish/Hispanic Origin;22-22;1
+NHIA Derived Hispanic Origin;23-23;1
+Sex;24-24;1
+Age at diagnosis;25-27;3
+Year of Birth;28-31;4
+Birth Place;32-34;3
+Sequence Number--Central;35-36;2
+Month of diagnosis;37-38;2
+Year of diagnosis;39-42;4
+Primary Site;43-46;4
+Laterality;47-47;1
+Histology (92-00) ICD-O-2;48-51;4
+Behavior (92-00) ICD-O-2;52-52;1
+Histologic Type ICD-O-3;53-56;4
+Behavior Code ICD-O-3;57-57;1
+Grade;58-58;1
+Diagnostic Confirmation;59-59;1
+Type of Reporting Source;60-60;1
+EOD—Tumor Size;61-63;3
+EOD—Extension;64-65;2
+EOD—Extension Prost Path;66-67;2
+EOD—Lymph Node Involv;68-68;1
+Regional Nodes Positive;69-70;2
+Regional Nodes Examined;71-72;2
+EOD—Old 13 Digit;73-85;13
+EOD—Old 2 Digit;86-87;2
+EOD—Old 4 Digit;88-91;4
+Coding System for EOD;92-92;1
+Tumor Marker 1;93-93;1
+Tumor Marker 2;94-94;1
+Tumor Marker 3;95-95;1
+CS Tumor Size;96-98;3
+CS Extension;99-101;3
+CS Lymph Nodes;102-104;3
+CS Mets at Dx;105-106;2
+CS Site-Specific Factor 1;107-109;3
+CS Site-Specific Factor 2;110-112;3
+CS Site-Specific Factor 3;113-115;3
+CS Site-Specific Factor 4;116-118;3
+CS Site-Specific Factor 5;119-121;3
+CS Site-Specific Factor 6;122-124;3
+CS Site-Specific Factor 25;125-127;3
+Derived AJCC T;128-129;2
+Derived AJCC N;130-131;2
+Derived AJCC M;132-133;2
+Derived AJCC Stage Group;134-135;2
+Derived SS1977;136-136;1
+Derived SS2000;137-137;1
+Derived AJCC—Flag;138-138;1
+Derived SS1977—Flag;139-139;1
+Derived SS2000—Flag;140-140;1
+CS Version Input Original;141-146;6
+CS Version Derived;147-152;6
+CS Version Input Current;153-158;6
+RX Summ—Surg Prim Site;159-160;2
+RX Summ—Scope Reg LN Sur;161-161;1
+RX Summ—Surg Oth Reg/Dis;162-162;1
+RX Summ—Reg LN Examined;163-164;2
+RX Summ—Reconstruct 1st;165-165;1
+Reason for no surgery;166-166;1
+RX Summ—Radiation;167-167;1
+RX Summ—Rad to CNS;168-168;1
+RX Summ—Surg / Rad Seq;169-169;1
+RX Summ—Surgery Type;170-171;2
+RX Summ—Surg Site 98-02;172-173;2
+RX Summ—Scope Reg 98-02;174-174;1
+RX Summ—Surg Oth 98-02;175-175;1
+SEER Record Number;176-177;2
+Over-ride age/site/morph;178-178;1
+Over-ride seqno/dxconf;179-179;1
+Over-ride site/lat/seqno;180-180;1
+Over-ride surg/dxconf;181-181;1
+Over-ride site/type;182-182;1
+Over-ride histology;183-183;1
+Over-ride report source;184-184;1
+Over-ride ill-define site;185-185;1
+Over-ride Leuk, Lymph;186-186;1
+Over-ride site/behavior;187-187;1
+Over-ride site/eod/dx dt;188-188;1
+Over-ride site/lat/eod;189-189;1
+Over-ride site/lat/morph;190-190;1
+SEER Type of Follow-up;191-191;1
+Age Recode <1 Year olds;192-193;2
+Site Recode;194-198;5
+Site Rec with Kaposi and Mesothelioma;199-203;5
+Recode ICD-O-2 to 9;204-207;4
+Recode ICD-O-2 to 10;208-211;4
+ICCC site recode ICD-O-2;212-214;3
+SEER modified ICCC site recode ICD-O-2;215-217;3
+ICCC site recode ICD-O-3;218-220;3
+ICCC site recode extended ICD-O-3;221-223;3
+Behavior Recode for Analysis;224-224;1
+ICD-O Coding Scheme;225-225;1
+Histology Recode—Broad Groupings;226-227;2
+Histology Recode—Brain Groupings;228-229;2
+CS Schema v0202;230-232;3
+Race recode (White, Black, Other);233-233;1
+Race recode (W, B, AI, API);234-234;1
+Origin recode NHIA (Hispanic, Non-Hisp);235-235;1
+SEER historic stage A;236-236;1
+AJCC stage 3rd edition (1988-2003);237-238;2
+SEER modified AJCC Stage 3rd ed (1988-2003);239-240;2
+SEER Summary Stage 1977 (1995-2000);241-241;1
+SEER Summary Stage 2000 (2001-2003);242-242;1
+Number of primaries;243-244;2
+First malignant primary indicator;245-245;1
+State-county recode;246-250;5
+Survival time recode;251-254;4
+Cause of Death to SEER site recode;255-259;5
+COD to site rec KM;260-264;5
+Vital Status recode;265-265;1
+IHS Link;266-266;1
+Summary stage 2000 (1998+);267-267;1
+AYA site recode;268-269;2
+Lymphoma subtype recode;270-271;2
+SEER Cause-Specific Death Classification;272-272;1
+SEER Other Cause of Death Classification;273-273;1
+CS Tumor Size/Ext Eval;274-274;1
+CS Lymph Nodes Eval;275-275;1
+CS Mets Eval;276-276;1
