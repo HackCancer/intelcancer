@@ -18,7 +18,7 @@
 #####################
 
 import sys, os
-import utils
+# import utils
 import numpy as np
 from numpy import genfromtxt, savetxt
 from sklearn.ensemble import RandomForestClassifier
@@ -48,7 +48,7 @@ def feature_weights(rf, feat_dict, weightsxfold, add='', add_string=''):
     # Measure importances
     importances = rf.feature_importances_
 
-    fo = open('../features/'+add+'weights.txt','a')
+    fo = open('/Users/yann/repos/hackcancer/intelcancer/src/features/'+add+'weights.txt','a')
     fo.write("Feature ranking tree "+add_string+" :\n----------\n")
     inv_map = {v: k for k, v in feat_dict.iteritems()}
     to_write = []
@@ -91,11 +91,11 @@ def print_weights(weightsxfold, add=''):
     plt.ylim([-1, len(feats)])
     plt.xlabel('Variance explained', fontsize=13)
     plt.title('weights, folds:'+str(len(weightsxfold.values()[0])))
-    plt.savefig('../visualization/'+add+'weights_barplot_'+str(len(weightsxfold.values()[0]))+'.png')
+    plt.savefig('/Users/yann/repos/hackcancer/intelcancer/src/visualization/'+add+'weights_barplot_'+str(len(weightsxfold.values()[0]))+'.png')
     plt.close()
 
 
-def random_forest(X, y, feat_dict, to_exclude=None, folds=10, test_size=0.2, add=''):
+def random_forest(X, y, n_est, folds=0, test_size=0.2, add=''):
     """
     Main fucntion to run a random forest classification problem
     You only need to pass two arrays coming directly from
@@ -109,11 +109,11 @@ def random_forest(X, y, feat_dict, to_exclude=None, folds=10, test_size=0.2, add
     """
 
     # Remove features we don't want in the analysis
-    if to_exclude != None:
-        X = utils.remove_column(X, to_exclude)
+    # if to_exclude != None:
+    #     X = utils.remove_column(X, to_exclude)
 
     # define the method and fit the classifier
-    classifier = RandomForestClassifier(n_estimators=200, oob_score=1, n_jobs=-1, random_state=50, max_features="auto", min_samples_leaf=5)
+    classifier = RandomForestClassifier(n_estimators=n_est, oob_score=1, n_jobs=-1, random_state=50, max_features="auto", min_samples_leaf=5)
 
     if folds == 0 or folds == None:
         classifier.fit(X, y)
@@ -132,10 +132,10 @@ def random_forest(X, y, feat_dict, to_exclude=None, folds=10, test_size=0.2, add
         all_tpr  = []
 
         # To plot the weigths
-        try:
-            os.system('rm ../features/'+add+'weights.txt')
-        except:
-            pass
+        # try:
+        #     os.system('rm /Users/yann/repos/hackcancer/intelcancer/src/features/'+add+'weights.txt')
+        # except:
+        #     pass
 
         weightsxfold = {}
 
@@ -169,7 +169,7 @@ def random_forest(X, y, feat_dict, to_exclude=None, folds=10, test_size=0.2, add
         plt.ylabel('True Positive Rate')
         plt.title('ROC, folds = '+str(folds))
         plt.legend(loc="lower right")
-        nm = '../visualization/'+add+'roc_'+str(folds)+'.png'
+        nm = '/Users/yann/repos/hackcancer/intelcancer/src/visualization/'+add+'roc_'+str(folds)+'.png'
         plt.savefig(nm)
         plt.close()
 
