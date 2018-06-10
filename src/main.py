@@ -16,8 +16,10 @@ def train_model(XX, yy, models):
     model = random_forest(X_train, y_train, n_est=10)
     # Test model
     y_score = model.predict(X_test)
+    #Sergi: Añado el vector de probabilidades para el ROC y AUC
+    y_score_probs = model.predict_proba(X_test)[:,1]
     # Get model stats
-    fpr, tpr, _ = roc_curve(y_test, y_score)
+    fpr, tpr, _ = roc_curve(y_test, y_score_probs)
     roc_auc = auc(fpr, tpr)
     # Append model stats to return list
     models.append([fpr, tpr, roc_auc, model, XX])
